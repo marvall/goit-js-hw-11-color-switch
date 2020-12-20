@@ -18,7 +18,7 @@ const changeColor = function () {
   start.disabled = true;
   if (intervalID === null) {
     intervalID = setInterval(() => {
-      let index = randomIntegerFromInterval(0, colors.length);
+      let index = randomIntegerFromInterval(0, colors.length - 1);
       document.querySelector("body").style.backgroundColor = colors[index];
     }, 1000);
   }
